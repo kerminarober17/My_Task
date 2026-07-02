@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Platform</title>
+    <title>Course Platform with Images</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class ="logo">EduAcademy</div>
+        <div class="logo">EduAcademy</div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -18,13 +18,18 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <button class= "btn-login">Login</button>
+        <button class="btn-login">Login</button>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Upgrade Your Skills For The Future</h1>
-            <p>Discover a wide range of programming and tech courses taught by industry experts.</p>
+            <div class="hero-content">
+                <h1>Upgrade Your Skills For The Future</h1>
+                <p>Discover a wide range of programming and tech courses taught by industry experts.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop" alt="Hero learning illustration">
+            </div>
         </section>
 
         <section class="courses-section">
@@ -32,7 +37,9 @@
             <div class="courses-grid">
                 
                 <div class="course-card">
-                    <div class="course-image"></div>
+                    <div class="course-image-container">
+                        <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=400&auto=format&fit=crop" alt="Full-Stack course" class="course-image">
+                    </div>
                     <div class="course-content">
                         <h3>Full-Stack Web Development</h3>
                         <p>Learn HTML, CSS, JavaScript, and build real-world projects from scratch.</p>
@@ -41,7 +48,9 @@
                 </div>
 
                 <div class="course-card">
-                    <div class="course-image"></div>
+                    <div class="course-image-container">
+                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=400&auto=format&fit=crop" alt="Programming essentials" class="course-image">
+                    </div>
                     <div class="course-content">
                         <h3>Programming Essentials</h3>
                         <p>The perfect starting point to understand coding logic and algorithms easily.</p>
@@ -49,12 +58,14 @@
                     </div>
                 </div>
 
-                <div class= "course-card">
-                    <div class="course-image"></div>
+                <div class="course-card">
+                    <div class="course-image-container">
+                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=400&auto=format&fit=crop" alt="UI/UX design course" class="course-image">
+                    </div>
                     <div class="course-content">
                         <h3>UI/UX Design Fundamentals</h3>
                         <p>Master the art of planning and designing beautiful, user-friendly digital products.</p>
-                        <button class ="btn-enroll" >Enroll Now</button>
+                        <button class="btn-enroll">Enroll Now</button>
                     </div>
                 </div>
 
