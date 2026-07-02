@@ -1,14 +1,13 @@
-*  {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body {
     background-color: #f8f9fa;
     color: #333;
-    line-height: 1.6;
+    line-height:1.6;
 }
 
 header {
@@ -16,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8% ;
+    padding: 20px 8%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
@@ -56,14 +55,19 @@ nav ul li a:hover {
     font-size: 15px;
 }
 
- .btn-login:hover {
-    background-color : #1a4f7c;
+.btn-login:hover {
+    background-color: #1a4f7c;
 }
-
 .hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #eef2f7 0%, #dfe7f2 100%) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #eef2f7 0%, #dfe7f2 100%);
+}
+.hero-content {
+    flex: 1;
+    max-width: 600px;
 }
 
 .hero h1 {
@@ -77,6 +81,18 @@ nav ul li a:hover {
     color: #718096;
 }
 
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 .courses-section {
     padding: 50px 8%;
 }
@@ -87,27 +103,33 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.courses-grid  {
+.courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-
 .course-card {
     background-color: #fff;
-    border-radius:8px ;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: transform 0.3s;
 }
 
 .course-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) ;
+}
+
+.course-image-container {
+    height: 180px;
+    width: 100%;
+    overflow: hidden ;
 }
 
 .course-image {
-    height: 180px;
-    background-color: #cbd5e0;
+    width: 100%;
+    height:100%;
+    object-fit: cover ;
 }
 
 .course-content {
@@ -123,7 +145,7 @@ nav ul li a:hover {
 .course-content p {
     color: #718096;
     font-size: 15px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
  .btn-enroll {
@@ -131,24 +153,24 @@ nav ul li a:hover {
     background-color: #fff;
     color: #2b6cb0;
     border: 2px solid #2b6cb0;
-    padding: 10px;
+    padding:10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 16px ;
     font-weight: bold;
     transition: all 0.3s;
 }
 
-.btn-enroll:hover {
+.btn-enroll:hover  {
     background-color: #2b6cb0;
     color: #fff;
 }
 
 footer {
     background-color: #2d3748;
-    color: #fff;
-    text-align:center;
-    padding: 20px;
-    margin-top: 40px ;
+    color: #fff ;
+    text-align: center;
+    padding:20px;
+    margin-top: 40px;
     font-size: 14px;
 }
