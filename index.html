@@ -1,80 +1,96 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Platform with Images</title>
+    <title>DevOrbit // Learn to Code</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">EduAcademy</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <header id="top-bar">
+        <div class="site-branding">
+            <h2>Dev<span>Orbit</span>.</h2>
+        </div>
+        <nav class="navigation-links">
+            <a href="#courses">Explore</a>
+            <a href="#about">Our Story</a>
+            <a href="#login" class="join-button">Start Coding</a>
         </nav>
-        <button class="btn-login">Login</button>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Upgrade Your Skills For The Future</h1>
-                <p>Discover a wide range of programming and tech courses taught by industry experts.</p>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop" alt="Hero learning illustration">
+    <main id="main-wrapper">
+        
+        <section class="welcome-zone">
+            <h1>Level Up Your Code Skills</h1>
+            <p>Simple, straight-to-the-point programming courses designed by developers, not textbooks. Bite-sized learning that actually sticks.</p>
+            
+            <div class="filter-tabs">
+                <button class="tab-clicker active-tab" onclick="filterSelection('all')">All Tech</button>
+                <button class="tab-clicker" onclick="filterSelection('frontend')">Frontend</button>
+                <button class="tab-clicker" onclick="filterSelection('backend')">Backend</button>
             </div>
         </section>
 
-        <section class="courses-section">
-            <h2>Our Featured Courses</h2>
-            <div class="courses-grid">
-                
-                <div class="course-card">
-                    <div class="course-image-container">
-                        <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=400&auto=format&fit=crop" alt="Full-Stack course" class="course-image">
-                    </div>
-                    <div class="course-content">
-                        <h3>Full-Stack Web Development</h3>
-                        <p>Learn HTML, CSS, JavaScript, and build real-world projects from scratch.</p>
-                        <button class="btn-enroll">Enroll Now</button>
+        <section class="courses-grid" id="courses-space">
+            
+            <div class="course-box item-card" data-category="frontend">
+                <div class= "thumb-holder">
+                    <span class="badge">Frontend</span>
+                    <img src = "https://www.ocode.co/wp-content/uploads/2023/09/Front-End-Development.jpeg" alt="JavaScript Course">
+                </div>
+                <div class="info-inside">
+                    <h3>JavaScript Magic: Beyond the Basics</h3>
+                    <p>Master async/await, closures, and modern ES6+ patterns without pulling your hair out.</p>
+                    <div class="meta-row">
+                        <span class="price-tag">$49</span>
+                        <button class="enroll-action" onclick="alert('Enrolling in JS Course!')">Grab Course</button>
                     </div>
                 </div>
-
-                <div class="course-card">
-                    <div class="course-image-container">
-                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=400&auto=format&fit=crop" alt="Programming essentials" class="course-image">
-                    </div>
-                    <div class="course-content">
-                        <h3>Programming Essentials</h3>
-                        <p>The perfect starting point to understand coding logic and algorithms easily.</p>
-                        <button class="btn-enroll">Enroll Now</button>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-image-container">
-                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=400&auto=format&fit=crop" alt="UI/UX design course" class="course-image">
-                    </div>
-                    <div class="course-content">
-                        <h3>UI/UX Design Fundamentals</h3>
-                        <p>Master the art of planning and designing beautiful, user-friendly digital products.</p>
-                        <button class="btn-enroll">Enroll Now</button>
-                    </div>
-                </div>
-
             </div>
+
+            <div class= "course-box item-card" data-category="backend">
+                <div class="thumb-holder">
+                    <span class="badge">Backend</span>
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/006/382/original/modern-flat-design-illustration-of-backend-development-free-vector.jpg" alt="Node.js Course">
+                </div>
+                <div class="info-inside">
+                    <h3>Node.js & MySQL: Building Fast APIs</h3>
+                    <p>Learn how to design solid relational databases and connect them to a high-performance backend server.</p>
+                    <div class="meta-row">
+                        <span class="price-tag">$59</span>
+                        <button class="enroll-action" onclick="alert('Enrolling in Backend Course!')">Grab Course</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-box item-card" data-category="frontend">
+                <div class="thumb-holder">
+                    <span class="badge">Frontend</span>
+                    <img src="https://www.ocode.co/wp-content/uploads/2023/09/Front-End-Development.jpeg" alt="CSS Grid Course">
+                </div>
+                <div class= "info-inside">
+                    <h3>UI Architecture with CSS & Flexbox</h3>
+                    <p>Stop guessing padding and margins. Learn the mental model behind building layouts that never break.</p>
+                    <div class="meta-row">
+                        <span class="price-tag">Free</span>
+                        <button class="enroll-action" onclick="alert('Enrolling for Free!')">Claim Free</button>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <footer>
-        <p>All Rights Reserved © 2026 | EduAcademy</p>
+    <footer id="bottom-footer">
+        <div class="footer-links">
+            <a href="#">Privacy</a> • 
+            <a href="#">Terms of Service</a> • 
+            <a href="#">Support Chat</a>
+        </div>
+        <div class="footer-cr">
+            <p>&copy; 2026 DevOrbit Project. Built for real learning.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
