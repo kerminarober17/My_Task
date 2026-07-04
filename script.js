@@ -1,8 +1,21 @@
-const enrollButtons = document.querySelectorAll('.btn-enroll');
-
-enrollButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        const courseTitle = this.parentElement.querySelector('h3').innerText;
-        alert(`Thank you for your interest! You have been pre-enrolled in: ${courseTitle}`);
+function filterSelection(category) {
+    const cards = document.querySelectorAll('.item-card');
+    const tabs = document.querySelectorAll('.tab-clicker');
+    
+    tabs.forEach(tab => {
+        if(tab.textContent.toLowerCase().includes(category) || (category === 'all' && tab.textContent.includes('All'))) {
+            tab.classList.add('active-tab');
+        } else {
+            tab.classList.remove('active-tab');
+        }
     });
-});
+
+    cards.forEach(card => {
+        const itemCategory = card.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
