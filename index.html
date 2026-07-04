@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOrbit // Learn to Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="top-bar">
+        <div class="site-branding">
+            <h2>Dev<span>Orbit</span>.</h2>
+        </div>
+        <nav class="navigation-links">
+            <a href="#courses">Explore</a>
+            <a href="#about">Our Story</a>
+            <a href="#login" class="join-button">Start Coding</a>
+        </nav>
+    </header>
+
+    <main id="main-wrapper">
+        
+        <section class="welcome-zone">
+            <h1>Level Up Your Code Skills</h1>
+            <p>Simple, straight-to-the-point programming courses designed by developers, not textbooks. Bite-sized learning that actually sticks.</p>
+            
+            <div class="filter-tabs">
+                <button class="tab-clicker active-tab" onclick="filterSelection('all')">All Tech</button>
+                <button class="tab-clicker" onclick="filterSelection('frontend')">Frontend</button>
+                <button class="tab-clicker" onclick="filterSelection('backend')">Backend</button>
+            </div>
+        </section>
+
+        <section class="courses-grid" id="courses-space">
+            
+            <div class="course-box item-card" data-category="frontend">
+                <div class= "thumb-holder">
+                    <span class="badge">Frontend</span>
+                    <img src = "https://www.ocode.co/wp-content/uploads/2023/09/Front-End-Development.jpeg" alt="JavaScript Course">
+                </div>
+                <div class="info-inside">
+                    <h3>JavaScript Magic: Beyond the Basics</h3>
+                    <p>Master async/await, closures, and modern ES6+ patterns without pulling your hair out.</p>
+                    <div class="meta-row">
+                        <span class="price-tag">$49</span>
+                        <button class="enroll-action" onclick="alert('Enrolling in JS Course!')">Grab Course</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class= "course-box item-card" data-category="backend">
+                <div class="thumb-holder">
+                    <span class="badge">Backend</span>
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/006/382/original/modern-flat-design-illustration-of-backend-development-free-vector.jpg" alt="Node.js Course">
+                </div>
+                <div class="info-inside">
+                    <h3>Node.js & MySQL: Building Fast APIs</h3>
+                    <p>Learn how to design solid relational databases and connect them to a high-performance backend server.</p>
+                    <div class="meta-row">
+                        <span class="price-tag">$59</span>
+                        <button class="enroll-action" onclick="alert('Enrolling in Backend Course!')">Grab Course</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-box item-card" data-category="frontend">
+                <div class="thumb-holder">
+                    <span class="badge">Frontend</span>
+                    <img src="https://www.ocode.co/wp-content/uploads/2023/09/Front-End-Development.jpeg" alt="CSS Grid Course">
+                </div>
+                <div class= "info-inside">
+                    <h3>UI Architecture with CSS & Flexbox</h3>
+                    <p>Stop guessing padding and margins. Learn the mental model behind building layouts that never break.</p>
+                    <div class="meta-row">
+                        <span class="price-tag">Free</span>
+                        <button class="enroll-action" onclick="alert('Enrolling for Free!')">Claim Free</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="bottom-footer">
+        <div class="footer-links">
+            <a href="#">Privacy</a> • 
+            <a href="#">Terms of Service</a> • 
+            <a href="#">Support Chat</a>
+        </div>
+        <div class="footer-cr">
+            <p>&copy; 2026 DevOrbit Project. Built for real learning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
